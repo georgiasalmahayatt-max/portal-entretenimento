@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Entretenimento Digital</title>
+    
+    <!-- 1. CSS Reset linkado antes da folha de estilo principal -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    
+    <!-- 2. CSS Externo principal -->
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <!-- 3. CSS Interno (entre tags <style> no <head>) -->
+    <style>
+        .destaque-intro {
+            text-align: center;
+            font-size: 1.1em;
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto 25px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal utilizando ID -->
+    <h1 id="titulo-principal">Meu Portal de Entretenimento Digital</h1>
+
+    <!-- Parágrafo estilizado com a classe do CSS Interno -->
+    <p class="destaque-intro">Bem-vindo ao seu portal definitivo de entretenimento! Navegue pelas nossas seções e fique por dentro de tudo o que acontece no mundo geek, musical e cinematográfico.</p>
+
+    <!-- Container Flexbox organizando as três colunas -->
+    <div class="portal-container">
+
+        <!-- Seção 1: Filmes e Séries -->
+        <div class="secao-filmes">
+            <h2 class="titulo-secao">Filmes e Séries</h2>
+            
+            <!-- Exemplo exigido de CSS Inline -->
+            <p style="color: #2c3e50; font-style: italic;">Acompanhe os maiores sucessos de bilheteria e as séries mais comentadas do momento nas plataformas de streaming.</p>
+            
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=500&q=80" alt="Cinema" class="portal-img">
+            <p class="legenda-img">Fonte: Unsplash - Cinema</p>
+
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80" alt="Filmes" class="portal-img">
+            <p class="legenda-img">Fonte: Unsplash - Filmes</p>
+        </div>
+
+        <!-- Seção 2: Música e Podcasts -->
+        <div class="secao-musica">
+            <h2 class="titulo-secao">Música e Podcasts</h2>
+            <p>Descubra novos artistas, álbuns imperdíveis e os podcasts mais informativos e divertidos da atualidade para ouvir onde estiver.</p>
+            
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80" alt="Música" class="portal-img">
+            <p class="legenda-img">Fonte: Unsplash - Música</p>
+
+            <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=500&q=80" alt="Podcasts" class="portal-img">
+            <p class="legenda-img">Fonte: Unsplash - Podcasts</p>
+        </div>
+
+        <!-- Seção 3: Games e Tecnologia -->
+        <div class="secao-games">
+            <h2 class="titulo-secao">Games e Tecnologia</h2>
+            <p>Explore análises profundas de jogos eletrônicos para consoles e PC, além das últimas inovações e lançamentos do setor tecnológico.</p>
+            
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500&q=80" alt="Games" class="portal-img">
+            <p class="legenda-img">Fonte: Unsplash - Games</p>
+
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80" alt="Tecnologia" class="portal-img">
+            <p class="legenda-img">Fonte: Unsplash - Tecnologia</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

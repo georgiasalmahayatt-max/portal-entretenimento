@@ -1,0 +1,76 @@
+/* ==========================================
+   FOLHA DE ESTILO EXTERNA - PORTAL DIGITAL
+   ================================---------- */
+
+/* Estilização base do corpo da página */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Identificador Único (ID) para o Título Principal do Portal */
+#titulo-principal {
+    text-align: center;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+/* Modelo Flexbox para organizar as três seções lado a lado horizontalmente */
+.portal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Agrupamento de seletores para padronizar o layout das colunas de conteúdo */
+.secao-filmes, .secao-musica, .secao-games {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Classe para padronizar os títulos de cada seção */
+.titulo-secao {
+    text-align: center;
+    color: #e94560;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 8px;
+}
+
+/* Classe para padronizar e estilizar as imagens ilustrativas */
+.portal-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Classe para padronizar a fonte das legendas das imagens */
+.legenda-img {
+    text-align: center;
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilização padrão para os parágrafos explicativos */
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
