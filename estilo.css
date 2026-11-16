@@ -1,76 +1,65 @@
 /* ==========================================
-   FOLHA DE ESTILO EXTERNA - PORTAL DIGITAL
-   ================================---------- */
+   ESTILO EXTERNO - Portal de Entretenimento
+   ========================================== */
 
-/* Estilização base do corpo da página */
+/* Estilização geral do corpo da página */
 body {
-    background-color: #f4f6f9;
     font-family: Arial, sans-serif;
-    color: #333;
+    background-color: #f4f7f6;
+    color: #333333;
+    padding: 20px;
 }
 
-/* Identificador Único (ID) para o Título Principal do Portal */
+/* ID exclusivo para o título principal da página */
 #titulo-principal {
     text-align: center;
-    background-color: #1a1a2e;
-    color: #ffffff;
-    padding: 30px;
-    font-size: 2.8em;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
-/* Modelo Flexbox para organizar as três seções lado a lado horizontalmente */
-.portal-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+/* Container principal utilizando Flexbox para organizar as 3 colunas */
+.container-portal {
+    display: flex;                 /* Ativa o modo Flexbox */
+    flex-direction: row;           /* Organiza os itens lado a lado (horizontal) */
+    justify-content: space-between;/* Distribui o espaço entre as colunas */
+    gap: 20px;                     /* Espaçamento limpo entre as colunas */
+    flex-wrap: wrap;               /* Responsividade para quebrar linha em telas menores */
+    margin-top: 20px;
+}
+
+/* Classe compartilhada para estilizar cada seção (coluna) */
+.coluna-secao {
+    flex: 1;                       /* Divide o espaço proporcionalmente entre as 3 colunas */
+    min-width: 300px;              /* Largura mínima para garantir bom layout */
+    background-color: #ffffff;
     padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Agrupamento de seletores para padronizar o layout das colunas de conteúdo */
-.secao-filmes, .secao-musica, .secao-games {
-    flex: 1;
-    background: #ffffff;
     border-radius: 8px;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Classe para padronizar os títulos de cada seção */
 .titulo-secao {
-    text-align: center;
-    color: #e94560;
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #e94560;
+    font-size: 1.5rem;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
     padding-bottom: 8px;
+    margin-bottom: 15px;
 }
 
-/* Classe para padronizar e estilizar as imagens ilustrativas */
+/* Classe para padronizar o tamanho e visual das imagens */
 .portal-img {
     width: 100%;
-    height: 160px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-top: 10px;
-    margin-bottom: 5px;
 }
 
-/* Classe para padronizar a fonte das legendas das imagens */
+/* Classe para as legendas e fontes das imagens */
 .legenda-img {
-    text-align: center;
-    font-size: 0.85em;
-    color: #666;
+    font-size: 0.85rem;
+    color: #7f8c8d;
     margin-bottom: 15px;
-    font-weight: bold;
-}
-
-/* Estilização padrão para os parágrafos explicativos */
-p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    font-style: italic;
 }
